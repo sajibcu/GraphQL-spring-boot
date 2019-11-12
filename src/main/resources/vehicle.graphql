@@ -1,0 +1,15 @@
+schema {
+ query: Query
+}
+
+type Query {
+	allVehicle : [Vehicle]
+	vehicle(id) : Vehicle
+}
+
+type Vehicle {
+	id : String
+	title: String
+	model: String
+	owner : [String]
+}
