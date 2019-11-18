@@ -1,4 +1,4 @@
-package com.example.graphql.Vehicle;
+package com.example.graphql.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

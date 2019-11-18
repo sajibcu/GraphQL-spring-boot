@@ -36,9 +36,15 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.liquibase:liquibase-core'
 	compileOnly 'org.projectlombok:lombok'
+	compile group: 'com.graphql-java', name: 'graphql-java', version: '2019-11-07T04-06-09-70d9412'
 	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
+	
+	// https://mvnrepository.com/artifact/org.hsqldb/hsqldb
+	testCompile group: 'org.hsqldb', name: 'hsqldb', version: '2.5.0'
+	
+	
 }
